@@ -1,208 +1,236 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Интернет магазин стройматериалов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700" rel="stylesheet">
+
     <script src="main.js"></script>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-        .header {
-            width: 100vw;
-            height: 120px;
-            background-image: linear-gradient(#ffd061, #efe083)
-        }
-        .container {
-            max-width: 1170px;
-            max-height: 100vh;
-            display: flex;
-            margin-right: auto;
-            margin-left: auto;
-            padding-left: 105px;
-            padding-right: 105px;
-            flex-direction: row;
-            justify-content: center;
-        }
-        .header__name {
-            height: 90px;
-            border: 1px solid;
-            box-sizing: border-box;
-            flex-grow: 2;
-        }
-        .header__name-text {
-            text-align: right;
-            padding-right: 40px;
-        }
-        
-        .header__menu {
-            height: 120px;
-            display: flex;
-            justify-content: space-around;
-            border: 1px solid;
-            margin-top: 0px;
-            list-style: none;
-            box-sizing: border-box;
-            flex-grow: 6;
-           
-        }
-        .navbar-menu {
-            padding: 20px;
-        }
-        .navbar-menu li {
-            display: inline;
-            padding: 0px 60px;
-                       
-        }
-        .header__cart {
-            height: 90px;
-            border: 1px solid black;
-            box-sizing: border-box;
-            flex-grow: 1;
-        }
-        .header__cart-right-icon {
-            margin-top: 30px;
-            padding: 8px;
-        }
         .main {
             box-sizing: border-box;
         }
+        
         .main__picture {
             width: 100vw;
         }
+        
         .main__picture img {
             max-width: 100vw;
         }
+        
         .main__link-window {
             margin-left: 100px;
             margin-right: 100px;
-
         }
-        .main__link { 
-                    
-            margin-top: 16px;
+        
+        .main__link-item {
+            max-width: 420px;
+            max-height: 480px;
+            overflow: hidden;
+        }
+        
+        .main__block {
+            margin-top: 20px;
+            margin-bottom: 30px;
             display: flex;
-            align-items:flex-start;
+            align-items: center;
             justify-content: space-between;
         }
+        
         .main__link-item img {
             max-width: 420px;
             max-height: 480px;
             margin: 10px;
-            object-fit: contain;
+            background-size: cover;
         }
+        
         .main__separate {
-            display:flex;
+            display: flex;
             flex-direction: row;
             justify-content: center;
             margin-top: 20px;
-           
         }
+        
         .main__separate hr {
             width: 450px;
             border: none;
             background-color: darkgrey;
             height: 2px;
         }
+        
         .product__item {
-            display: flex;
-            flex-direction: row;
-            margin-top: 26px;
-            align-items: center;
-            justify-content: space-between;
             box-sizing: border-box;
             font-size: 14px;
-            
-            
         }
+        
         .product__item-list {
-            
-            margin:10px;
+            margin: 10px;
         }
+        
         .product__item-list h3 {
             margin: 0;
             height: 30px;
         }
+        
         .product__item-list--img {
             border: 1px solid #959595;
             margin-bottom: 16px;
-            
         }
+        
         .list--img {
             max-width: 260px;
             max-height: 260px;
             object-fit: contain;
             opacity: 0.6;
         }
+        
         .list--img:hover {
             opacity: 1;
             transform: scale(0.9);
-            
         }
+        
         .details-name {
             margin: 0;
             padding-right: 30%;
         }
+        
         .price {
             float: right;
         }
+        
         .details-item-group a {
-            
             text-decoration: none;
             text-transform: uppercase;
         }
-        .main__news {
-            display: flex;
-            flex-direction: row;
-            margin-top: 26px;
-            align-items: center;
-            justify-content: space-between;
-            box-sizing: border-box;
-            font-size: 14px;
+        
+        .news-hot {
+            position: relative;
+            overflow: hidden;
         }
         
-        .footer {
-            max-width: 100vw;
-            height: 400px;
-            background-color: #959595;
+        .news-hot img {
+            box-sizing: border-box;
+            max-width: 370px;
+            max-height: 170px;
+            margin: 10px;
+            object-fit: contain;
         }
-
+        
+        .news-hot img:hover {
+            object-fit: cover;
+        }
+        
+        .module__content {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(149, 149, 149, 0.2);
+            text-align: center;
+        }
+        
+        .module_content h3 {
+            line-height: 30px;
+            font-size: 24px;
+            font-weight: 900;
+            margin: 0 10px 10px;
+        }
     </style>
 </head>
+
 <body>
     <div class="header">
-        <div class="container">
-            <div class="header__name">
-                <div class="header__name-logo"></div>
-                <div class="header__name-text">
-                    <h1>BuildMarket</h1>
+        <div class="inner-header">
+            <div class="wrapper">
+                <ul class="header-list">
+                    <li>
+                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </li>
+                    <li class="header__description">интернет-магазин<br>строительных материалов</li>
+                    <li><a href="index.html" class="basket"><span class="fs18">1000</span> товаров<br>на сумму <span class="fs18">11
+                                500</span> BYN </a></li>
+                </ul>
+                <div class="info-block">
+                    <ul class="net-icons">
+                        <li>
+                            <a href="index.html"></a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="linkedin"></a>
+                        </li>
+                    </ul>
+                    <span class="tel">+375 17 3924461</span>
+                    <ul class="registration">
+                        <li><a href="index.html">Войти</a></li>
+                        <li><a href="index.html">Зарегистрироваться</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="header__menu">
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav-inner">
+            <div class="wrapper">
                 <nav>
-                    <ul class="navbar-menu">
-                        <li>Каталог</li>
-                        <li>Акция</li>
-                        <li>Оплата</li>
-                        <li>Контакты</li>      
+                    <ul>
+                        <li><a href="index.html">Главная |</a></li>
+                        <li><a href="index.html">О магазине |</a>
+                            <ul>
+                                <li><a href="index.html">Бренды</a></li>
+                                <li><a href="index.html">Заводы производители</a></li>
+                                <li><a href="index.html">История компании</a></li>
+                                <li><a href="index.html">Наша команда</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">Каталог |</a>
+                            <ul>
+                                <li><a href="index.html">Сухие смеси</a></li>
+                                <li><a href="index.html">Гипсокартон</a></li>
+                                <li><a href="index.html">Утеплитель</a></li>
+                                <li><a href="index.html">Краски и грунтовки</a></li>
+                                <li><a href="index.html">Инструменты</a></li>
+                                <li><a href="index.html">Метизы саморезы</a></li>
+                                <li><a href="index.html">Подвесные потолки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">Новости |</a>
+                            <ul>
+                                <li><a href="index.html">Монтаж подвесного потолка</a></li>
+                                <li><a href="index.html">Монтаж перегородки</a></li>
+                                <li><a href="index.html">Приклеивание плитки</a></li>
+                                <li><a href="index.html">Подготовка стен</a></li>
+                                <li><a href="index.html">Крепление теплого пола</a></li>
+                                <li><a href="index.html">Декоративная штукатурка</a></li>
+                                <li><a href="index.html">Основные советы по ремонту</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">Акции |</a>
+                            <ul>
+                                <li><a href="index.html">Распродажа до 90%</a></li>
+                                <li><a href="index.html">Успей купить</a></li>
+                                <li><a href="index.html">Неликвидный товар</a></li>
+                                <li><a href="index.html">Акция 1+1</a></li>
+                                <li><a href="index.html">Сезонный товар</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="index.html">Олата |</a></li>
+                        <li><a href="index.html">Доставка |</a></li>
+                        <li><a href="index.html">Контакты |</a></li>
                     </ul>
                 </nav>
-            </div>
-            <div class="header__cart">
-                <div class="header__cart-right-icon">
-                <a class="header__cart-button" href="#"><span class="cart-bag-icon"><span class="cart-bag">0</span> <span class="cart-bag-handle"></span></span> <span class="cart-total">Cart - <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&pound;</span>0.00</span></span></a>
-                    <div class="cart-dropdown hidden-xs hidden-sm">
-                        <div class="header_cart_list">
-                            <!--         
-                                                    <div class="empty">No products in the cart.</div>
-                                            </div><!== end product list -->
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -211,109 +239,199 @@
             <img src="images/main img.jpg" alt="picture">
         </div>
         <div class="main__link-window">
-            <div class="main__link">
-            <div class="main__link-item">
-                <div class="item-catalog">
-                    <img src="images/shutterstock_127665902-580x878.jpg" alt="picture">
+            <div class="main__block">
+                <div class="main__link-item">
+                    <div class="item-catalog">
+                        <img src="images/shutterstock_127665902-580x878.jpg" alt="catalogPicture">
+                    </div>
                 </div>
-            </div>
-            <div class="main__link-item">   
-                <div class="item-sale">
-                    <img src="images/shutterstock_152280329-580x878.jpg" alt="picture">
+                <div class="main__link-item">
+                    <div class="item-sale">
+                        <img src="images/shutterstock_152280329-580x878.jpg" alt="SalePicture">
+                    </div>
                 </div>
-            </div>
-            <div class="main__link-item">
-                <div class="item-deliver">
-                    <img src="images/shutterstock_151738268-580x878.jpg" alt="picture">
+                <div class="main__link-item">
+                    <div class="item-deliver">
+                        <img src="images/shutterstock_151738268-580x878.jpg" alt="DeliveryPicture">
+                    </div>
                 </div>
-            </div>
-            
+
             </div>
             <div class="main__separate">
-                <div class="main__separate-left"><hr></div>
-                <div class="main__separate-center">FEATURED PRODUCTS</div>
-                <div class="main__separate-right"><hr></div>
+                <div class="main__separate-left">
+                    <hr>
+                </div>
+                <div class="main__separate-center">НОВИНКИ ТОВАРОВ</div>
+                <div class="main__separate-right">
+                    <hr>
+                </div>
             </div>
-            <div class="product__item">
+            <div class="product__item main__block">
                 <div class="product__item-list">
                     <div class="product__item-list--img">
                         <div class="list--img">
-                        <img src="images/rotband.jpg" alt="rotband"></div>
+                            <img src="images/rotband.jpg" alt="rotband"></div>
                     </div>
                     <div class="product__item-details">
-                        <span class="price"><span class="currencySymbol">$</span>5.50</span>
+                        <span class="price"><span class="currencySymbol">BYN</span>10.50</span>
                         <div class="details-name">
-                            <h3>Rotband</h3> 
+                            <h3>Штукатурка Ротбанд</h3>
                             <div class="details-item-group">
-                                <a href="#">Smesi</a>
+                                <a href="#">Сухие смеси</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product__item-list">   
-                    <div class="product__item-list--img">
-                        <div class="list--img">
-                        <img src="images/gipsokarton.jpg" alt="gipsokarton"></div>
-                    </div>
-                    <div class="product__item-details">
-                            <span class="price"><span class="currencySymbol">$</span>3.75</span>
-                            <div class="details-name">
-                                <h3>Knauf GKL</h3> 
-                                <div class="details-item-group">
-                                    <a href="#">Gipsokarton</a>
-                                </div>
-                            </div>
-                        </div>
                 </div>
                 <div class="product__item-list">
                     <div class="product__item-list--img">
                         <div class="list--img">
-                        <img src="images/profil.jpg" alt="profil"></div>
+                            <img src="images/gipsokarton.jpg" alt="gipsokarton"></div>
                     </div>
                     <div class="product__item-details">
-                            <span class="price"><span class="currencySymbol">$</span>1.80</span>
-                            <div class="details-name">
-                                <h3>CD Profil</h3> 
-                                <div class="details-item-group">
-                                    <a href="#">Profil</a>
-                                </div>
+                        <span class="price"><span class="currencySymbol">BYN</span>11.75</span>
+                        <div class="details-name">
+                            <h3>Кнауф ГКЛ</h3>
+                            <div class="details-item-group">
+                                <a href="#">Гипсокартон</a>
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div class="product__item-list">
                     <div class="product__item-list--img">
                         <div class="list--img">
-                        <img src="images/teplorulon.jpg" alt="teplorulon"></div>
+                            <img src="images/profil.jpg" alt="profil"></div>
                     </div>
                     <div class="product__item-details">
-                            <span class="price"><span class="currencySymbol">$</span>22.10</span>
-                            <div class="details-name">
-                                <h3>Teplorulon</h3> 
-                                <div class="details-item-group">
-                                    <a href="#">Uteplitel</a>
-                                </div>
+                        <span class="price"><span class="currencySymbol">BYN</span>3.80</span>
+                        <div class="details-name">
+                            <h3>CD Профиль</h3>
+                            <div class="details-item-group">
+                                <a href="#">Профиль</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="product__item-list">
+                    <div class="product__item-list--img">
+                        <div class="list--img">
+                            <img src="images/teplorulon.jpg" alt="teplorulon"></div>
+                    </div>
+                    <div class="product__item-details">
+                        <span class="price"><span class="currencySymbol">BYN</span>32.10</span>
+                        <div class="details-name">
+                            <h3>Теплорулон</h3>
+                            <div class="details-item-group">
+                                <a href="#">Утеплитель</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main__news">
-                
-                    <div class="news-hot">
-                        <img src="images/newsLastChance.jpg" alt="LaChancetoBuy">
-                            </div>
-                <div class="news-hot">   
-                   
-                        <img src="images/newsDelivery.jpg" alt="Delivery">
-                
+            <div class="main__news main__block">
+                <div class="news-hot">
+                    <img src="images/newsLastChance.jpg" alt="LaChancetoBuy">
+                    <span class="module__content">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: middle">
+                                        <h3>УСПЕЙ <br>КУПИТЬ
+                                            <div class="sep-border"></div>
+                                        </h3>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </span>
                 </div>
                 <div class="news-hot">
-                    
-                        <img src="images/saleSeason.jpg" alt="SaleSeason">
-                                    </div>
-                
-                </div>   
+                    <img src="images/newsDelivery.jpg" alt="Delivery">
+                </div>
+                <div class="news-hot">
+                    <img src="images/saleSeason.jpg" alt="SaleSeason">
+                </div>
+
+            </div>
+
         </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>СТРОЙКРАЙ<span>logo</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Главная</a> ·
+                <a href="#">Каталог</a> ·
+                <a href="#">Оплата</a> ·
+                <a href="#">Доставка</a> ·
+                <a href="#">Новости</a> ·
+                <a href="#">Контакты</a>
+            </p>
+
+            <p class="footer-company-name">BUILDMARKET &copy; 2018</p>
+        </div>
+        <div class="footer-contactForm">
+
+            <p>Напишите нам</p>
+
+            <form action="#" method="post">
+
+                <input type="text" name="email" placeholder="Email" />
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+
+            </form>
+
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>пр-т Победителей, 129</span>Минск, Беларусь</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+ 375 17 329-44-61</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:info@buildmarket.com">info@buildmarket.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>О компании</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook">
+                    <img src="images/facebook.png" alt="facebook">
+                </i></a>
+                <a href="#"><i class="fa fa-twitter">
+                    <img src="images/twitter.png" alt="twitter">
+                </i></a>
+                <a href="#"><i class="fa fa-linkedin">
+                    <img src="images/linkedin.png" alt="linkedin">
+                </i></a>
+                <a href="#"><i class="fa fa-instagram">
+                    <img src="images/instagram.png" alt="instagram">
+                </i></a>
+
+            </div>
+
+        </div>
+
+    </div>
 </body>
+
 </html>
