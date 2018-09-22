@@ -1,0 +1,209 @@
+    body {
+        font-family: 'Kalam', cursive;
+        font-size: 1.33vmax;
+        line-height: 1.33vmax;
+        margin: 0 auto;
+    }
+    
+    .header__wrap {
+        width: 81.66vw;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .header {
+        background: linear-gradient(#ffb507, #efe083);
+        color: black;
+    }
+    
+    .grey {
+        background-color: #838d8f;
+        color: #fff;
+    }
+    
+    .header__top {
+        width: 100%;
+        height: 9.16vmax;
+    }
+    
+    .header__wrap {
+        height: inherit;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .header__main {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .header__button {
+        border-radius: 0.33vw;
+        padding: 0.66vw 1.32vw;
+        overflow: hidden;
+        width: fit-content;
+        font-size: inherit;
+        cursor: pointer;
+    }
+    
+    #sign {
+        border: 1px solid #A52A2A;
+        color: #A52A2A;
+        font-size: 1.1vmax;
+        font-weight: bold;
+    }
+    
+    #sign svg {
+        width: 1.2vmax;
+        height: 1.2vmax;
+        fill: #A52A2A;
+        margin-right: 1.83vmax;
+    }
+    
+    #sign:hover {
+        background-color: #A52A2A;
+        color: #ffb507;
+        border-color: #A52A2A;
+        transition: all 200ms linear;
+    }
+    
+    #sign:hover svg {
+        fill: #ffb507;
+        transition: all 200ms linear;
+    }
+    
+    .header__name,
+    .header__telefon {
+        margin-left: 1.8vmax;
+        color: black;
+    }
+    
+    .header__logo,
+    .header__logo a {
+        display: block;
+        width: 21.33vmax;
+    }
+    
+    .header__logo img {
+        width: inherit;
+        height: inherit;
+    }
+    
+    #cart {
+        border: 1px solid #2ca13a;
+        color: #2ca13a;
+        font-size: 1.1vmax;
+        font-weight: bold;
+        margin-left: 1.8vmax;
+    }
+    
+    #cart svg {
+        width: 1.25vmax;
+        height: 1.16vmax;
+        margin-right: 1.5vmax;
+        fill: #2ca13a;
+    }
+    
+    #cart:hover {
+        background-color: #2ca13a;
+        color: #ffb507;
+        border-color: #2ca13a;
+        transition: all 200ms linear;
+    }
+    
+    #cart:hover svg {
+        fill: #ffb507;
+        transition: all 200ms linear;
+    }
+    
+    .header__menu {
+        background-color: #fff;
+        width: 100%;
+        height: 4.16vmax;
+    }
+    
+    nav li {
+        list-style: none;
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-size: 1vmax;
+    }
+    
+    .header__nav,
+    .header__nav li,
+    .header__nav a {
+        display: flex;
+        flex-flow: row nowrap;
+        height: inherit;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header__nav a {
+        padding: 0 1.5vmax;
+        color: #3c3d41;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    li>ul {
+        display: none;
+        position: absolute;
+        top: 39px;
+        font-size: 0.85vmax;
+        padding: 0;
+        border-radius: 4px;
+    }
+    
+    li>ul>li {
+        border-top: 1px solid #999;
+        border-radius: 4px;
+        font-weight: normal;
+        padding: 4px 4px;
+    }
+    
+    li>ul>li>a {
+        display: block;
+        color: #999;
+        font-size: 0.8vmax;
+    }
+    
+    nav>li:hover ul {
+        display: block;
+        background: #efe083;
+        transition: all 200ms linear;
+    }
+    
+    .header__nav a:hover {
+        background: #efe083;
+        color: #A52A2A;
+        box-sizing: content-box;
+        transition: all 200ms linear;
+        border-radius: 4px;
+    }
+    
+    .header__search svg {
+        width: 1.5vmax;
+        height: 1.5vmax;
+    }
+    
+    .header__search {
+        position: absolute;
+        cursor: pointer;
+        right: 0;
+    }
+    
+    .banner {
+        width: 100%;
+    }
+    
+    .banner img {
+        min-height: 100%;
+        max-width: 100%;
+        width: -webkit-fill-available;
+    }

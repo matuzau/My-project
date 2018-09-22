@@ -34,8 +34,9 @@ body {
     margin: 0 auto;
 }
 
-.header-list li {
-    float: left;
+.header-list {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .header-list img {

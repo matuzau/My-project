@@ -1,0 +1,121 @@
+body {
+    background-color: #dddddd86;
+}
+
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 81.66vw;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 4.16vmax;
+    padding-bottom: 6.66vmax;
+}
+
+.main__left_bar {
+    width: 19.16vmax;
+}
+
+.main__right_bar {
+    width: 55.83vmax;
+}
+
+.list-product {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /*background-color: #dddddd;*/
+    flex-flow: wrap;
+}
+
+.box {
+    border-radius: 0.33vw;
+    background-color: #fff;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    text-decoration: none;
+    /*padding: 1.33vmax 1.33vw;*/
+    height: 19vmax;
+    width: 15.6vw;
+    margin-bottom: 1.33vmax;
+    margin-right: 1.33vmax;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+}
+
+.product-stiker {
+    color: #fff;
+    padding: 0.3vmax;
+    font-size: 0.5vmax;
+    text-transform: uppercase;
+    right: 1vmax;
+    position: absolute;
+    z-index: 1;
+    top: 1vmax;
+    letter-spacing: 0.1vmax;
+}
+
+#hit {
+    background-color: #A52A2A;
+}
+
+.product-img {
+    width: 100%;
+    height: 13.33vmax;
+    overflow: hidden;
+}
+
+.product-img img {
+    height: 100%;
+    width: auto;
+}
+
+#load-more {
+    border: none;
+    width: 100%;
+    border-radius: 0.33vw;
+    color: #ffb507;
+    background-color: #dddddd;
+    font-size: 1.25vmax;
+    padding-top: 1.66vmax;
+    padding-bottom: 1.66vmax;
+    margin-top: 1.66vmax;
+}
+
+#load-more:hover {
+    transform: scale(0.95)
+}
+
+.product h2 {
+    font-size: 1.5vmax;
+    line-height: 1.5vmax;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 0.8vmax;
+    font-weight: bold;
+}
+
+.product p:first-of-type {
+    font-style: italic;
+    font-size: 1.15vmax;
+    color: #A52A2A;
+    text-align: center;
+    margin: 0.8vmax;
+}
+
+.price {
+    margin: 0.83vmax;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
