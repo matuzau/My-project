@@ -6,96 +6,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Header</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/header.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/headerFLEX.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="css/animation/motion.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
     <script src="main.js"></script>
 </head>
 
 <body>
     <div class="header">
-        <div class="inner-header">
-            <div class="wrapper">
-                <ul class="header-list">
-                    <li>
-                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <div class="header__top">
+            <div class="header__wrap">
+                <div class="header__main">
+                    <div class="header__button header__main" id="sign">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 350" xml:space="preserve">
+                            <g>
+                                <path d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587
+                        		C104.535,132.855,136.084,171.173,175,171.173z" />
+                                <path d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z" />
+                                <path d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z" />
+                                <path d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761
+                        		s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131
+                        		c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496
+                                c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z" />
+                                </g>
+                                </svg> ВОЙТИ
+                    </div>
+                    <div class="header__name">
+                        Интернет-магазин <br>стройматериалов
+                    </div>
+                </div>
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header__main">
+                    <div class="header__telefon">
+                        Телефон: <span>+ 375 29 663-00-00</span>
+                    </div>
+                    <div class="header__button header__main" id="cart">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                            <g>
+                                <g id="shopping-cart">
+                                    <path d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306
+                        			c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7
+                        			c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408
+                        			c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z" />
+                                </g>
+                            </g>
+                        </svg> КОРЗИНА
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="header__wrap header__main" style="justify-content:center">
+                <nav class="header__nav">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html">О магазине</a>
+                        <ul>
+                            <li><a href="index.html">Бренды</a></li>
+                            <li><a href="index.html">Заводы производители</a></li>
+                            <li><a href="index.html">История компании</a></li>
+                            <li><a href="index.html">Наша команда</a></li>
+                        </ul>
                     </li>
-                    <li class="header__description">интернет-магазин<br>строительных материалов</li>
-                    <li><a href="index.html" class="basket"><span class="fs18">1000</span> товаров<br>на сумму <span class="fs18">11 500</span> BYN </a></li>
-                </ul>
-                <div class="info-block">
-                    <ul class="net-icons">
-                        <li>
-                            <a href="index.html"></a>
-                        </li>
-                        <li>
-                            <a href="index.html" class="facebook"></a>
-                        </li>
-                        <li>
-                            <a href="index.html" class="linkedin"></a>
-                        </li>
-                    </ul>
-                    <span class="tel">+375 17 3924461</span>
-                    <ul class="registration">
-                        <li><a href="index.html">Войти</a></li>
-                        <li><a href="index.html">Зарегистрироваться</a></li>
-                    </ul>
+                    <li><a href="index.html">Каталог</a>
+                        <ul>
+                            <li><a href="index.html">Сухие смеси</a></li>
+                            <li><a href="index.html">Гипсокартон</a></li>
+                            <li><a href="index.html">Утеплитель</a></li>
+                            <li><a href="index.html">Краски и грунтовки</a></li>
+                            <li><a href="index.html">Инструменты</a></li>
+                            <li><a href="index.html">Метизы саморезы</a></li>
+                            <li><a href="index.html">Подвесные потолки</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Новости</a>
+                        <ul>
+                            <li><a href="index.html">Монтаж подвесного потолка</a></li>
+                            <li><a href="index.html">Монтаж перегородки</a></li>
+                            <li><a href="index.html">Приклеивание плитки</a></li>
+                            <li><a href="index.html">Подготовка стен</a></li>
+                            <li><a href="index.html">Крепление теплого пола</a></li>
+                            <li><a href="index.html">Декоративная штукатурка</a></li>
+                            <li><a href="index.html">Основные советы по ремонту</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Акции</a>
+                        <ul>
+                            <li><a href="index.html">Распродажа до 90%</a></li>
+                            <li><a href="index.html">Успей купить</a></li>
+                            <li><a href="index.html">Неликвидный товар</a></li>
+                            <li><a href="index.html">Акция 1+1</a></li>
+                            <li><a href="index.html">Сезонный товар</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Оплата</a></li>
+                    <li><a href="index.html">Доставка</a></li>
+                    <li><a href="index.html">Контакты</a></li>
+
+                </nav>
+                <div class="header__search">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
+                        <g>
+                            <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z" />
+                        </g>
+                    </svg>
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="nav">
-        <div class="nav-inner">
-            <div class="wrapper">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Главная   |</a></li>
-                        <li><a href="index.html">О магазине   |</a>
-                            <ul>
-                                <li><a href="index.html">Бренды</a></li>
-                                <li><a href="index.html">Заводы производители</a></li>
-                                <li><a href="index.html">История компании</a></li>
-                                <li><a href="index.html">Наша команда</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="index.html">Каталог   |</a>
-                            <ul>
-                                <li><a href="index.html">Сухие смеси</a></li>
-                                <li><a href="index.html">Гипсокартон</a></li>
-                                <li><a href="index.html">Утеплитель</a></li>
-                                <li><a href="index.html">Краски и грунтовки</a></li>
-                                <li><a href="index.html">Инструменты</a></li>
-                                <li><a href="index.html">Метизы саморезы</a></li>
-                                <li><a href="index.html">Подвесные потолки</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="index.html">Новости   |</a>
-                            <ul>
-                                <li><a href="index.html">Монтаж подвесного потолка</a></li>
-                                <li><a href="index.html">Монтаж перегородки</a></li>
-                                <li><a href="index.html">Приклеивание плитки</a></li>
-                                <li><a href="index.html">Подготовка стен</a></li>
-                                <li><a href="index.html">Крепление теплого пола</a></li>
-                                <li><a href="index.html">Декоративная штукатурка</a></li>
-                                <li><a href="index.html">Основные советы по ремонту</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="index.html">Акции   |</a>
-                            <ul>
-                                <li><a href="index.html">Распродажа до 90%</a></li>
-                                <li><a href="index.html">Успей купить</a></li>
-                                <li><a href="index.html">Неликвидный товар</a></li>
-                                <li><a href="index.html">Акция 1+1</a></li>
-                                <li><a href="index.html">Сезонный товар</a></li>
-
-                            </ul>
-                        </li>
-                        <li><a href="index.html">Олата   |</a></li>
-                        <li><a href="index.html">Доставка   |</a></li>
-                        <li><a href="index.html">Контакты   |</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <div class="banner">
+        <img src="images/banner.png" alt="banner">
     </div>
 </body>
 

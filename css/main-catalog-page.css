@@ -12,6 +12,7 @@ body {
     position: relative;
     padding-top: 4.16vmax;
     padding-bottom: 6.66vmax;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .main__left_bar {
@@ -48,7 +49,6 @@ body {
     width: 15.6vw;
     margin-bottom: 1.33vmax;
     margin-right: 1.33vmax;
-    font-family: 'Roboto Condensed', sans-serif;
     position: relative;
 }
 
@@ -68,6 +68,10 @@ body {
     background-color: #A52A2A;
 }
 
+#new {
+    background-color: #2ca13a;
+}
+
 .product-img {
     width: 100%;
     height: 13.33vmax;
@@ -83,9 +87,11 @@ body {
     border: none;
     width: 100%;
     border-radius: 0.33vw;
+    box-shadow: 0 4px 2px 0px #ffcc336b;
     color: #ffb507;
     background-color: #dddddd;
     font-size: 1.25vmax;
+    font-weight: bold;
     padding-top: 1.66vmax;
     padding-bottom: 1.66vmax;
     margin-top: 1.66vmax;
@@ -118,4 +124,108 @@ body {
 
 .product:hover {
     transform: scale(1.05);
+}
+
+.category__list {
+    width: 100%;
+}
+
+.title-list,
+.title-filter {
+    display: flex;
+    flex-flow: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.16vmax;
+    padding: 0 1.66vmax;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.title-list svg {
+    width: 12px;
+    fill: #ccc;
+}
+
+.title-list.open svg {
+    fill: #A52A2A;
+    transform: rotate(90deg);
+}
+
+.title-list p,
+{
+    font-size: 1.2vmax;
+    letter-spacing: 0.2vmax;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.list-link {
+    background-color: #ffcc33;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.list-link.open {
+    height: auto;
+    overflow: auto;
+    padding: 1.66vmax;
+    padding-bottom: 0;
+}
+
+.list-link a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 1.15vmax;
+    padding-bottom: 1.33vmax;
+    letter-spacing: 0.1vmax;
+}
+
+.list-link li {
+    margin-bottom: 1.25vmax;
+}
+
+.list-link li:hover a {
+    color: #A52A2A;
+}
+
+.title-filter {
+    margin-top: 1.83vmax;
+}
+
+.list-filter {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    margin-right: 0.66vw;
+    margin-bottom: 1.2vmax;
+    margin-top: 0.3vmax;
+    padding: 1vmax;
+}
+
+.list-filter li {
+    padding: 0.3vmax;
+}
+
+.list-filter label {
+    border-radius: 1vmax;
+    width: 12vmax;
+    height: 2.5vmax;
+    padding-left: 0.3vmax;
+    cursor: pointer;
+}
+
+.list-filter input [type=checkbox]:checked+label {
+    box-shadow: 0 0 5px 5px #A52A2A;
+}
+
+.price-box {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
