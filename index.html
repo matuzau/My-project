@@ -14,17 +14,35 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/myproject.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.js"></script>
 
-    <script src="main.js"></script>
 
 </head>
 
 <body>
+    <div onclick="show('none')" id="gray"></div>
+    <div id="window">
+        <!-- Картинка крестика -->
+        <img class="close" src="images/close.png" alt="" onclick="show('none')">
+        <div class="form">
+            <h2>Войти в аккаунт</h2>
+            <form action="index.html" name="f1">
+                <input type="email" placeholder="Электронная почта" name="email" class="input">
+                <input type="password" placeholder="Пароль" name="password" class="input">
+                <input type="submit" value="Войти" name="sab" class="input regButton">
+            </form>
+        </div>
+    </div>
     <div class="header">
         <div class="header__top">
             <div class="header__wrap">
                 <div class="header__main">
-                    <div class="header__button header__main" id="sign">
+                    <div onclick="show('block')" class="header__button header__main" id="sign">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 350" xml:space="preserve">
                             <g>
                                 <path d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587
@@ -38,6 +56,7 @@
                             </g>
                         </svg> ВОЙТИ
                     </div>
+
                     <div class="header__name">
                         Интернет-магазин <br>стройматериалов
                     </div>
@@ -52,7 +71,7 @@
                         Телефон: <span>+ 375 29 663-00-00</span>
                     </div>
                     <div class="header__button header__main" id="cart">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                        <svg version="1.1" id="Capa_11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
                             <g>
                                 <g id="shopping-cart">
                                     <path d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306
@@ -70,7 +89,7 @@
             <div class="header__wrap header__main" style="justify-content:center">
                 <nav class="header__nav">
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="index.html">О магазине</a>
+                    <li><a href="contactspage.html">О магазине</a>
                         <ul>
                             <li><a href="index.html">Бренды</a></li>
                             <li><a href="index.html">Заводы производители</a></li>
@@ -78,15 +97,15 @@
                             <li><a href="index.html">Наша команда</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html">Каталог</a>
+                    <li><a href="catalog-page.html">Каталог</a>
                         <ul>
-                            <li><a href="index.html">Сухие смеси</a></li>
-                            <li><a href="index.html">Гипсокартон</a></li>
-                            <li><a href="index.html">Утеплитель</a></li>
-                            <li><a href="index.html">Краски и грунтовки</a></li>
-                            <li><a href="index.html">Инструменты</a></li>
-                            <li><a href="index.html">Метизы саморезы</a></li>
-                            <li><a href="index.html">Подвесные потолки</a></li>
+                            <li><a href="catalog-page.html">Сухие смеси</a></li>
+                            <li><a href="catalog-page.html">Гипсокартон</a></li>
+                            <li><a href="catalog-page.html">Утеплитель</a></li>
+                            <li><a href="catalog-page.html">Краски и грунтовки</a></li>
+                            <li><a href="catalog-page.html">Инструменты</a></li>
+                            <li><a href="catalog-page.html">Метизы саморезы</a></li>
+                            <li><a href="catalog-page.html">Подвесные потолки</a></li>
                         </ul>
                     </li>
                     <li><a href="index.html">Новости</a>
@@ -100,7 +119,7 @@
                             <li><a href="index.html">Основные советы по ремонту</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html">Акции</a>
+                    <li><a href="contactspage.html">Акции</a>
                         <ul>
                             <li><a href="index.html">Распродажа до 90%</a></li>
                             <li><a href="index.html">Успей купить</a></li>
@@ -112,7 +131,7 @@
                     </li>
                     <li><a href="index.html">Оплата</a></li>
                     <li><a href="index.html">Доставка</a></li>
-                    <li><a href="index.html">Контакты</a></li>
+                    <li><a href="contactspage.html">Контакты</a></li>
 
                 </nav>
                 <div class="header__search">
@@ -127,7 +146,7 @@
         </div>
     </div>
     <div class="banner">
-        <img src="images/banner.png" alt="banner">
+        <img src="images/banner.png" alt="banner" id="bannerSlider">
     </div>
     <div class="main">
         <div class="main__link-window">

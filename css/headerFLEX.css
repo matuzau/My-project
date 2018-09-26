@@ -199,11 +199,204 @@
     }
     
     .banner {
-        width: 100%;
+        width: 100vw;
+        position: relative;
+        left: 0;
+        transition: all ease 1s;
+    }
+    
+    .slider {
+        margin: 0 auto;
+        overflow: hidden;
     }
     
     .banner img {
-        min-height: 100%;
-        max-width: 100%;
-        width: -webkit-fill-available;
+        width: inherit;
+        float: left;
+    }
+    
+    .banner-img::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .cart-box {
+        position: fixed;
+        height: 70vh;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        background-color: #fff;
+        width: 35vw;
+        box-shadow: 5px -2px 20px 2px black;
+        border-radius: 2px;
+        transform: translateX(100%);
+    }
+    
+    .cart-box.open {
+        transform: translateX(0);
+    }
+    
+    .regButton {
+        background: #A52A2A;
+        border: 1px solid #A52A2A;
+        border-radius: 3px;
+        padding: 6px 24px;
+        cursor: pointer;
+        color: #ffb507;
+    }
+    
+    .regButton:hover {
+        background: #ccc;
+        color: #A52A2A;
+    }
+    
+    #window {
+        width: 260px;
+        height: 200px;
+        margin: 40px auto;
+        background: #efe083;
+        border: 1px solid #fff;
+        border-radius: 15px;
+        z-index: 150;
+        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    
+    .form {
+        margin: -15px 20px;
+        text-align: center;
+    }
+    
+    .input {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .close {
+        margin: 10px 0 0 230px;
+        cursor: pointer;
+        border: 1px solid rgba(204, 204, 204, 0.178);
+        padding: 2px;
+        background: rgba(204, 204, 204, 0.178);
+    }
+    
+    .close:hover {
+        background: #fff;
+    }
+    
+    #gray {
+        opacity: 0.8;
+        padding: 15px;
+        background-color: rgba(1, 1, 1, 0.75);
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: none;
+        z-index: 100;
+        overflow: auto;
+    }
+    
+    .contact {
+        width: 81.66vw;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flow-root;
+    }
+    
+    .contact h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 24px;
+        color: #3c3d41;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .contact .googlemap iframe {
+        height: 400px;
+        border: none;
+        box-sizing: border-box;
+    }
+    
+    .contact-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .contact-info h2 {}
+    
+    .contact-left {
+        width: 45%
+    }
+    
+    .contact-left p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #878787;
+        margin-top: 22px;
+    }
+    
+    .contact-left p a {
+        text-decoration: none;
+        color: #ffb507;
+    }
+    
+    .contact-right {
+        width: 45%
+    }
+    
+    .contact-right form textarea {
+        background: #f0f3f5;
+        padding: 6px 12px;
+        border: 1px solid #f1f1f1;
+        border-radius: 3px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-style: italic;
+        color: #000;
+        height: 140px;
+        width: 100%;
+        box-sizing: border-box;
+        background: transparent;
+        border: 1px solid #beb9b9;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .input-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input-flex input {
+        width: 220px;
+        background: transparent;
+        border: 1px solid #beb9b9;
+        border-radius: 3px;
+        margin-top: 4px;
+        padding: 6px 12px;
+        font-style: italic;
+    }
+    
+    form input [type="submit"],
+    form input [type="reset"] {
+        width: 90px;
+        height: 40px;
+        background: #ffb507;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        color: #A52A2A;
+        border: none;
+        cursor: pointer;
+        transition: .2s;
     }
