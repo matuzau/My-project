@@ -41,8 +41,8 @@ var timer;
 function autoSlider() {
     timer = setTimeout(function() {
         var banner = document.getElementById('bannerSlider');
-        left = left - 1370;
-        if (left < -4110) {
+        left = left - 1140;
+        if (left < -3420) {
             left = 0;
             clearTimeout(timer);
         }
@@ -54,4 +54,51 @@ function autoSlider() {
 function show(state) {
     document.getElementById('window').style.display = state;
     document.getElementById('gray').style.display = state;
+};
+
+var goods = {
+    "11292": {
+        "name": "Клей Тайфун №18",
+        "cost": 8.00,
+        "description": "Клей для блоков",
+        "image": "images/клей18.jpg"
+    },
+    "11294": {
+        "name": "Клей Тайфун №50",
+        "cost": 9.50,
+        "description": "Клей для приклеивания утеплителя",
+        "image": "images/клей50.jpg"
+    },
+    "11295": {
+        "name": "Штукатурка Тайфун №22",
+        "cost": 14.70,
+        "description": "Декоративная штукатурка",
+        "image": "images/тайфун22.jpg"
+    }
+};
+console.log(goods);
+
+var out = '';
+for (var key in goods) {
+    out += 'Название: ' + goods[key].name + '<br>';
 }
+document.getElementById('out').innerHTML = out;
+// $('document').ready(function() {
+//     loadGoods();
+
+// });
+
+// function loadGoods() {
+//     $.getJSON('goods.json', function(data) {
+//         var out = '';
+//         for (var key in data) {
+//             out += '<div class="single-goods">';
+//             out += '<h3>' + data[key]['name'] + '</h3>';
+//             out += '<p>Цена: ' + data[key]['cost'] + '</p>';
+//             out += '<img src="' + data[key].image + '">';
+//             out += '<button>Купить</button>';
+//             out += '</div>';
+//         }
+//         $('#goods').html(out);
+//     });
+// }

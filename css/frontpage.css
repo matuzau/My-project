@@ -57,6 +57,7 @@
 
 .product__item-list {
     margin: 10px;
+    box-shadow: 2px -1px 14px 0px rgba(214, 214, 214, 0.795);
 }
 
 .product__item-list h3 {
@@ -65,15 +66,19 @@
 }
 
 .product__item-list--img {
-    border: 1px solid #959595;
+    border: none;
     margin-bottom: 16px;
+}
+
+.product__item-details {
+    padding: 4px 8px;
 }
 
 .list--img {
     max-width: 260px;
     max-height: 260px;
     object-fit: contain;
-    opacity: 0.6;
+    opacity: 0.90;
 }
 
 .list--img:hover {
