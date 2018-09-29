@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/myproject.js"></script>
-
+    <link rel="stylesheet" href="slick/slick/slick.css">
+    <link rel="stylesheet" href="slick/slick/slick-theme.css">
 </head>
 
 <body>
@@ -127,19 +128,24 @@
     </div>
     <div class="banner">
         <div class="banner-wrap">
-            <div class="slider" id="bannerSlider">
+            <div class="slider">
                 <div class="slider-block">
-                    <img src="http://stroitelnie-materiali.ru/image/cache/catalog/slider/5_knauf_rotband_1-1140x380.jpg" alt="KNAUF" class="img-responsive">
+                    <img src="images/slide1.jpg" alt="KNAUF" class="img-responsive">
                 </div>
                 <div class="slider-block">
-                    <img src="http://stroitelnie-materiali.ru/image/cache/catalog/slider/isolux_Ceresit_2-1140x380.jpg" alt="CERESIT" class="img-responsive">
+                    <img src="images/slide2.jpg" alt="CERESIT" class="img-responsive">
                 </div>
                 <div class="slider-block">
-                    <img src="http://stroitelnie-materiali.ru/image/cache/catalog/slider/fin_slider-1140x380.jpg" alt="Наливной пол" class="img-responsive">
+                    <img src="images/slide3.jpg" alt="Наливной пол" class="img-responsive">
+                </div>
+                <div class="slider-block">
+                    <img src="images/slide4.jpg" alt="Наливной пол" class="img-responsive">
+                </div>
+                <div class="slider-block">
+                    <img src="images/slide5.jpg" alt="Наливной пол" class="img-responsive">
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="main">
         <div class="main__left_bar">
@@ -229,20 +235,6 @@
                     </ul>
                 </div>
             </div>
-            <div class="product__filter box">
-                <div class="title-filter">
-                    Цена
-                </div>
-                <div class="content-filter">
-                    <div id="slider-price">
-                        <!--<div class="price-box">
-                            <input type="text" name="minPrice" value="">
-                            <input type="text" name="maxPrice" value="">
-
-                        </div> -->
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="main__right_bar">
             <div class="list-product">
@@ -251,7 +243,7 @@
                         Хит продаж
                     </div>
                     <div class="product-img">
-                        <img src="images/клей 18.jpg" alt="">
+                        <img src="images/клей18.jpg" alt="">
                     </div>
                     <h2>Клей для блоков Тайфун №18</h2>
                     <p>Сухие смеси</p>
@@ -259,7 +251,7 @@
                 </a>
                 <a href="" class="product box">
                     <div class="product-img">
-                        <img src="images/клей 18.jpg" alt="">
+                        <img src="images/клей51.jpg" alt="">
                     </div>
                     <h2>Клей для блоков Тайфун №18</h2>
                     <p>Сухие смеси</p>
@@ -267,7 +259,7 @@
                 </a>
                 <a href="" class="product box">
                     <div class="product-img">
-                        <img src="images/клей 18.jpg" alt="">
+                        <img src="images/клейлюкс.jpg" alt="">
                     </div>
                     <h2>Клей для блоков Тайфун №18</h2>
                     <p>Сухие смеси</p>
@@ -275,7 +267,7 @@
                 </a>
                 <a href="" class="product box">
                     <div class="product-img">
-                        <img src="images/клей 18.jpg" alt="">
+                        <img src="images/тайфун22.jpg" alt="">
                     </div>
                     <h2>Клей для блоков Тайфун №18</h2>
                     <p>Сухие смеси</p>
@@ -283,7 +275,7 @@
                 </a>
                 <a href="" class="product box">
                     <div class="product-img">
-                        <img src="images/клей 18.jpg" alt="">
+                        <img src="images/белгипсгклв.png" alt="">
                     </div>
                     <h2>Клей для блоков Тайфун №18</h2>
                     <p>Сухие смеси</p>
@@ -291,7 +283,7 @@
                 </a>
                 <a href="" class="product box">
                     <div class="product-img">
-                        <img src="images/клей 18.jpg" alt="">
+                        <img src="images/кнауфгкл.jpg" alt="">
                     </div>
                     <h2>Клей для блоков Тайфун №18</h2>
                     <p>Сухие смеси</p>
@@ -299,7 +291,7 @@
                 </a>
                 <a href="" class="product box">
                     <div class="product-img">
-                        <img src="images/клей 18.jpg" alt="">
+                        <img src="images/тайфун 42.jpg" alt="">
                     </div>
                     <h2>Клей для блоков Тайфун №18</h2>
                     <p>Сухие смеси</p>
@@ -307,7 +299,7 @@
                 </a>
                 <a href="" class="product box">
                     <div class="product-img">
-                        <img src="images/клей 18.jpg" alt="">
+                        <img src="images/белгипсгклво.png" alt="">
                     </div>
                     <h2>Клей для блоков Тайфун №18</h2>
                     <p>Сухие смеси</p>
@@ -315,7 +307,7 @@
                 </a>
                 <a href="" class="product box">
                     <div class="product-img">
-                        <img src="images/клей 18.jpg" alt="">
+                        <img src="images/кнауфгкло.jpg" alt="">
                     </div>
                     <h2>Клей для блоков Тайфун №18</h2>
                     <p>Сухие смеси</p>
@@ -479,6 +471,8 @@
             </form>
         </div>
     </div>
+    <script src="slick/slick/slick.min.js"></script>
+    <script src="js/slickjs.js"></script>
 </body>
 
 </html>

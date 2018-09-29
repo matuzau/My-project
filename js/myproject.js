@@ -32,24 +32,24 @@ $(function() {
 
 });*/
 
-autoSlider();
-var left = 0;
-var timer;
+// autoSlider();
+// var left = 0;
+// var timer;
 
 
 
-function autoSlider() {
-    timer = setTimeout(function() {
-        var banner = document.getElementById('bannerSlider');
-        left = left - 1140;
-        if (left < -3420) {
-            left = 0;
-            clearTimeout(timer);
-        }
-        banner.style.left = left + 'px';
-        autoSlider();
-    }, 3000);
-};
+// function autoSlider() {
+//     timer = setTimeout(function() {
+//         var banner = document.getElementById('bannerSlider');
+//         left = left - 1140;
+//         if (left < -3420) {
+//             left = 0;
+//             clearTimeout(timer);
+//         }
+//         banner.style.left = left + 'px';
+//         autoSlider();
+//     }, 3000);
+// };
 
 function show(state) {
     document.getElementById('window').style.display = state;
@@ -57,23 +57,59 @@ function show(state) {
 };
 
 var goods = {
-    "11292": {
+    "item1": {
         "name": "Клей Тайфун №18",
         "cost": 8.00,
         "description": "Клей для блоков",
         "image": "images/клей18.jpg"
     },
-    "11294": {
+    "item2": {
         "name": "Клей Тайфун №50",
         "cost": 9.50,
         "description": "Клей для приклеивания утеплителя",
         "image": "images/клей50.jpg"
     },
-    "11295": {
+    "item3": {
         "name": "Штукатурка Тайфун №22",
         "cost": 14.70,
         "description": "Декоративная штукатурка",
         "image": "images/тайфун22.jpg"
+    },
+    "item4": {
+        "name": "Клей Люкс",
+        "cost": 5.40,
+        "description": "Клей для плитки",
+        "image": "images/клейлюкс.jpg"
+    },
+    "item5": {
+        "name": "Белгипс ГКЛ",
+        "cost": 11.80,
+        "description": "Гипсокартон для стен",
+        "image": "images/белгипсгкл.jpg"
+    },
+    "item6": {
+        "name": "Кнауф ГКЛВО",
+        "cost": 13.10,
+        "description": "Гипсокартон для стен",
+        "image": "images/кнауфгкло.jpg"
+    },
+    "item7": {
+        "name": "Клей Тайфун №51",
+        "cost": 9.60,
+        "description": "Клей для утеплителя",
+        "image": "images/клей51.jpg"
+    },
+    "item8": {
+        "name": "Белгипс ГКЛВ",
+        "cost": 10.50,
+        "description": "Гипсокартон для стен",
+        "image": "images/белгипсгклв.jpg"
+    },
+    "item9": {
+        "name": "Стяжка Тайфун №42",
+        "cost": 14.70,
+        "description": "Стяжка для пола",
+        "image": "images/тайфун42.jpg"
     }
 };
 console.log(goods);
@@ -81,6 +117,7 @@ console.log(goods);
 var out = '';
 for (var key in goods) {
     out += 'Название: ' + goods[key].name + '<br>';
+    out += 'Цена: ' + goods[key].cost + '<br>';
 }
 document.getElementById('out').innerHTML = out;
 // $('document').ready(function() {
