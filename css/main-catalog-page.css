@@ -45,7 +45,45 @@
     width: 15.6vw;
     margin-bottom: 1.33vmax;
     margin-right: 1.33vmax;
+    padding-top: 6px;
+    padding-bottom: 6px;
     position: relative;
+    background: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    border-radius: 6px;
+}
+
+.product-title {
+    font-size: 8px;
+}
+
+.product-description {
+    font-size: 10px;
+    padding: 4px;
+}
+
+.product-price {
+    padding: 4px;
+    font-weight: bold;
+    color: #A52A2A;
+}
+
+.product-btn {
+    width: 100px;
+    height: 40px;
+    background-image: linear-gradient(to right bottom, #fddc00, #f1c400, #e4ac00, #d59600, #c48000);
+    opacity: 0.7;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+}
+
+.product-btn:hover {
+    background-image: linear-gradient(to right, #2ca13a, #4bb436, #69c730, #88d926, #a8eb12);
+    opacity: 1;
+    color: #A52A2A;
 }
 
 .product-stiker {
@@ -75,8 +113,8 @@
 }
 
 .product-img img {
-    height: 100%;
     width: auto;
+    height: 100%;
 }
 
 #load-more {
@@ -97,7 +135,7 @@
     transform: scale(0.95)
 }
 
-.product h2 {
+.product-title {
     font-size: 1.5vmax;
     line-height: 1.5vmax;
     text-align: center;
