@@ -19,9 +19,15 @@ function show(state) {
 // cartBtn.onclick = function() {
 //     cartOpen.className = 'open';
 // };
-$('#cart').click(function() {
+$('#cart, .cart-title').click(function() {
     $('.cart-box').toggleClass('open');
 });
+
+$('.header__search').click(function() {
+    $('.search-panel').toggleClass('open');
+});
+
+
 
 // var navlinks = document.querySelector('.header__nav li #nav-links');
 // navlinks.onfocus = function() {
@@ -100,7 +106,14 @@ function createBox(item) {
         '<div class="product-price">' + item.cost + " руб " + '</div>' +
         '<button class="product-btn">' + "Купить" + '</button>'
     return box;
-}
+};
+
+$('#load-more').click(function(event) {
+    event.preventDefault();
+    $('.list-product').appendChild(product);
+});
+
+
 // var product = document.querySelectorAll('#product-title');
 // // var img = document.createElement('img');
 // var h2 = document.createElement('h2');
