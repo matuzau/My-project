@@ -202,8 +202,7 @@
         cursor: pointer;
         right: 0;
     }
-    
-    .banner {
+    /* .banner {
         background: #fff;
         padding-bottom: 10px;
     }
@@ -211,12 +210,11 @@
     #bannerSlider {
         min-width: 1322px;
         margin: 0 auto;
-    }
+    } */
     
     .banner-wrap {
-        max-width: 1140px;
-        height: 380px;
-        margin: 0 auto;
+        max-height: 700px;
+        overflow: hidden;
     }
     
     .banner img {
@@ -310,9 +308,9 @@
     
     .search-panel input {
         width: 100%;
-        border: 1px solid #F83;
+        border: 1px solid rgba(207, 205, 203, 0.712);
         height: 1.9vmax;
-        border-radius: 6px;
+        border-radius: 2px;
         padding-left: 6px;
     }
     
