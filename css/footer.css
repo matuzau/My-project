@@ -10,6 +10,7 @@
 
 .footer-wrapper {
     display: flex;
+    flex-flow: wrap;
     align-items: flex-start;
     justify-content: space-between;
     text-align: left;

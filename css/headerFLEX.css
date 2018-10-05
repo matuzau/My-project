@@ -1,14 +1,19 @@
     body {
         font-family: 'Roboto Condensed', sans-serif;
-        font-size: 1.33vmax;
+        font-size: 16px;
         margin: 0 auto;
         background-image: linear-gradient(to right bottom, #f9f9e5, #cfcfb6, #a7a788, #80805d, #5b5b35);
     }
     
     .header__wrap {
-        width: 81.66vw;
+        max-width: 1080px;
+        height: inherit;
         margin: 0 auto;
         position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
     }
     
     .header {
@@ -23,20 +28,11 @@
     
     .header__top {
         width: 100%;
-        height: 9.16vmax;
-    }
-    
-    .header__wrap {
-        height: inherit;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
     }
     
     .header__main {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
     }
     
@@ -52,15 +48,15 @@
     #sign {
         border: 1px solid #A52A2A;
         color: #A52A2A;
-        font-size: 1.1vmax;
+        font-size: 16px;
         font-weight: bold;
     }
     
     #sign svg {
-        width: 1.2vmax;
-        height: 1.2vmax;
+        width: 16px;
+        height: 16px;
         fill: #A52A2A;
-        margin-right: 1.83vmax;
+        margin-right: 20px;
     }
     
     #sign:hover {
@@ -76,19 +72,18 @@
     }
     
     .header__name {
-        margin-left: 1.8vmax;
+        margin-left: 20px;
         color: #A52A2A;
     }
     
     .header__telefon {
-        margin-left: 1.8vmax;
+        margin-left: 20px;
         color: #2ca13a;
     }
     
     .header__logo,
     .header__logo a {
-        display: block;
-        width: 21.33vmax;
+        width: 420px;
     }
     
     .header__logo img {
@@ -99,15 +94,15 @@
     #cart {
         border: 1px solid #2ca13a;
         color: #2ca13a;
-        font-size: 1.1vmax;
+        font-size: 16px;
         font-weight: bold;
-        margin-left: 1.8vmax;
+        margin-left: 20px;
     }
     
     #cart svg {
-        width: 1.25vmax;
-        height: 1.16vmax;
-        margin-right: 1.5vmax;
+        width: 16px;
+        height: 16px;
+        margin-right: 18px;
         fill: #2ca13a;
     }
     
@@ -126,7 +121,7 @@
     .header__menu {
         background-color: #fff;
         width: 100%;
-        height: 4.16vmax;
+        height: 56px;
     }
     
     nav li {
@@ -135,24 +130,30 @@
     
     nav a {
         text-decoration: none;
-        font-size: 1vmax;
+        font-size: 16px;
+    }
+    
+    nav a:hover {
+        border-bottom: 2px solid #A52A2A;
     }
     
     .header__nav,
     .header__nav li,
     .header__nav a {
         display: flex;
-        flex-flow: row nowrap;
-        height: inherit;
+        flex-flow: wrap;
         align-items: center;
         justify-content: center;
+        box-sizing: border-box;
     }
     
     .header__nav a {
-        padding: 0 1.5vmax;
+        padding: 0 30px;
         color: #3c3d41;
         text-transform: uppercase;
+        font-size: large;
         font-weight: bold;
+        height: 36px;
     }
     
     li>ul {
@@ -178,23 +179,20 @@
         font-size: 12px;
     }
     
-    nav>li:hover ul {
-        display: block;
-        background: #efe083;
-        transition: all 200ms linear;
+    #menu {
+        display: none;
     }
     
     .header__nav a:hover {
-        background: #efe083;
         color: #A52A2A;
-        box-sizing: content-box;
+        box-sizing: border-box;
         transition: all 200ms linear;
-        border-radius: 4px;
+        padding-bottom: 0;
     }
     
     .header__search svg {
-        width: 1.5vmax;
-        height: 1.5vmax;
+        width: 20px;
+        height: 20px;
     }
     
     .header__search {
@@ -298,7 +296,7 @@
         padding: 1vmax;
         top: 0;
         left: 0;
-        width: 94%;
+        width: 90%;
         display: none;
     }
     
@@ -309,7 +307,7 @@
     .search-panel input {
         width: 100%;
         border: 1px solid rgba(207, 205, 203, 0.712);
-        height: 1.9vmax;
+        height: 24px;
         border-radius: 2px;
         padding-left: 6px;
     }
@@ -473,4 +471,179 @@
         margin-right: 10px;
         cursor: pointer;
         transition: .2s;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .header__top {
+            padding: 10px;
+        }
+        .header__wrap {
+            max-width: 768px;
+            padding: 10px;
+        }
+        .header__name {
+            margin-left: 10px;
+            color: #A52A2A;
+        }
+        .header__telefon {
+            margin-left: 10px;
+            color: #2ca13a;
+        }
+        .header__logo,
+        .header__logo a {
+            width: 360px;
+        }
+        .header__logo img {
+            max-width: 360px;
+        }
+        .header__menu {
+            height: auto;
+        }
+        .header__nav a {
+            display: none;
+        }
+        .header__nav a.icon {
+            float: left;
+            margin-top: -17px;
+            display: block;
+        }
+        #menu {
+            display: block;
+        }
+        nav a {
+            color: black;
+        }
+        .header__nav .responsive {
+            position: relative;
+            width: 100%;
+        }
+        .header__nav .responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .header__nav .responsive a {
+            display: block;
+            float: none;
+            text-align: left;
+        }
+        .header__search {
+            top: 10px;
+            padding-right: inherit;
+        }
+        .search-panel.open {
+            width: 80%;
+        }
+        .cart-box {
+            position: fixed;
+            height: 450px;
+            right: 0px;
+            top: 0;
+            z-index: 100;
+            background-color: #fff;
+            width: 30vw;
+            box-shadow: 5px -2px 20px 2px black;
+            border-radius: 2px;
+            transform: translateX(100%);
+            box-sizing: border-box;
+        }
+        .cart-box.open {
+            transform: translateX(0);
+        }
+        .cart-title {
+            display: flex;
+            height: 60px;
+            flex-grow: 1;
+            flex-direction: row;
+            flex-flow: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2fa33ce1;
+            width: 100%;
+            padding-left: 12px;
+            color: #fff;
+            fill: #fff;
+            cursor: pointer;
+        }
+        #next {
+            padding-right: 20px;
+            width: 20px;
+            height: 20px;
+        }
+        .cart-content {
+            height: 340px;
+            flex-grow: 4;
+        }
+        #order {
+            width: 100%;
+            height: 50px;
+            flex-grow: 1;
+            color: #fff;
+            border: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            background-color: #ff6000;
+        }
+        #order:hover {
+            background-color: #ff6200b4;
+        }
+        .regButton {
+            background: #A52A2A;
+            border: 1px solid #A52A2A;
+            border-radius: 3px;
+            padding: 6px 24px;
+            cursor: pointer;
+            color: #ffb507;
+        }
+        .regButton:hover {
+            background: #ccc;
+            color: #A52A2A;
+        }
+        #window {
+            width: 260px;
+            height: 200px;
+            margin: 40px auto;
+            background: #efe083;
+            border: 1px solid #fff;
+            border-radius: 15px;
+            z-index: 150;
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 100px;
+            bottom: 0;
+        }
+        .form {
+            margin: -30px 20px;
+            text-align: center;
+        }
+        .input {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .close {
+            margin: 10px 0 0 230px;
+            cursor: pointer;
+            border: 1px solid rgba(204, 204, 204, 0.178);
+            padding: 2px;
+            background: rgba(204, 204, 204, 0.178);
+        }
+        .close:hover {
+            background: #fff;
+        }
+        #gray {
+            opacity: 0.8;
+            padding: 15px;
+            background-color: rgba(1, 1, 1, 0.75);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: none;
+            z-index: 100;
+            overflow: auto;
+        }
     }
