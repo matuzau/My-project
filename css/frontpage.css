@@ -206,10 +206,35 @@
         width: 86%;
         margin: 0 auto;
     }
+    .header__top {
+        padding: 0;
+    }
     .product__item-list {
         width: 100%;
     }
     .product__item-list--img img {
         zoom: 120%;
+    }
+    .main__separate {
+        overflow: hidden;
+    }
+    .main__separate-left {
+        width: auto;
+    }
+    .news-hot img {
+        margin: 0;
+        max-width: 322px;
+    }
+    .main__link-item,
+    .banner,
+    .footer-adress,
+    .footer-right,
+    .footer-contactForm {
+        display: none;
+    }
+    .footer-links {
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: space-between;
     }
 }

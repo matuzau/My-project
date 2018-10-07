@@ -14,6 +14,11 @@ function show(state) {
     document.getElementById('gray').style.display = state;
 };
 
+function show2(state2) {
+    document.getElementById('feedback').style.display = state2;
+    document.getElementById('gray2').style.display = state2;
+};
+
 // var cartBtn = document.querySelector('#cart');
 // var cartOpen = document.querySelector('.cart-box')
 // cartBtn.onclick = function() {
@@ -27,6 +32,11 @@ $('.header__search').click(function() {
     $('.search-panel').toggleClass('open');
 });
 
+$(document).ready(function() {
+    $(".mobile-menu").on('click', function() {
+        $(".header__nav").toggleClass("active");
+    })
+});
 
 
 var goods = [{
@@ -104,10 +114,10 @@ function createBox(item) {
     return box;
 };
 
-$('#load-more').click(function(event) {
-    event.preventDefault();
-    $('.list-product').appendChild(product);
-});
+// $('#load-more').click(function(event) {
+//     event.preventDefault();
+//     $('.list-product').appendChild(product);
+// });
 
 // var itemBox = document.querySelectorAll('.product');
 // var cartCont = document.querySelector('.cart-content');
@@ -178,11 +188,11 @@ $('#load-more').click(function(event) {
 // /* Открыть корзину */
 // addEvent(document.getElementById('order'), 'click', openCart);
 
-menu.onclick = function myFunction() {
-    var x = document.querySelector('.header__nav');
-    if (x.className === "header__nav") {
-        x.className += "responsive";
-    } else {
-        x.className = "header__nav";
-    }
-}
+// menu.onclick = function myFunction() {
+//     var x = document.querySelector('.header__nav');
+//     if (x.className === "header__nav") {
+//         x.className += "responsive";
+//     } else {
+//         x.className = "header__nav";
+//     }
+// }

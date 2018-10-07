@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Интернет-магазин стройматериалов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/headerFLEX.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/frontpage.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/mainpage.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen">
     <link rel="stylesheet" href="fonts/fontawesome-free-5.3.1-web/css/all.css" type="text/css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
@@ -19,11 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/myproject.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/jquery.js"></script>
-
-
 </head>
 
 <body>
@@ -75,7 +71,10 @@
             </div>
         </div>
         <div class="header__menu">
-            <div class="header__wrap header__main" style="justify-content:center">
+            <div class="header__wrap header__main">
+                <div class="mobile-menu">
+                    <span>МЕНЮ</span>
+                </div>
                 <nav class="header__nav">
                     <li><a href="index.html" id="nav-links">Главная</a></li>
                     <li><a href="mainpage.html" id="nav-links">О магазине</a>
@@ -180,8 +179,8 @@
                     </div>
                 </div>
             </div>
-            <div class="block-feedback">
-                <a class="button-Down" href="">Отправить заявку</a>
+            <div class="block-feedback" onclick="show2('block')">
+                <a class="button-Down" href="#">Отправить заявку</a>
             </div>
         </div>
     </div>
@@ -191,7 +190,6 @@
                 <div class="footer-left-logo">
                     <img src="images/logo.png" alt="logo">
                 </div>
-
                 <div class="footer-links">
                     <a href="#">О нас</a>
                     <a href="#">Вакансии</a>
@@ -200,23 +198,15 @@
                     <a href="#">Отзывы</a>
                     <a href="#">Доставка</a>
                 </div>
-
-
             </div>
             <div class="footer-contactForm">
-
                 <p>Напишите нам</p>
-
                 <form action="#" method="post">
-
                     <input type="text" name="email" placeholder="Email" />
                     <textarea name="message" placeholder="Текст сообщения..."></textarea>
                     <button>Отправить</button>
-
                 </form>
-
             </div>
-
             <div class="footer-adress">
                 <div class="adress-icon">
                     <i class="icon-map">
@@ -240,7 +230,6 @@
                     </i>
                     <p><span>пр-т Победителей, 129</span>Минск, Беларусь</p>
                 </div>
-
                 <div class="adress-icon">
                     <i class="icon-phone">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -276,7 +265,6 @@
                     </i>
                     <p>+ 375 17 329-44-61</p>
                 </div>
-
                 <div class="adress-icon">
                     <i class="icon-email">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -298,9 +286,7 @@
                     <p><a href="mailto:info@buildmarket.com">info@buildmarket.com</a></p>
                 </div>
             </div>
-
             <div class="footer-right">
-
                 <p class="footer-company-about">
                     <span>О компании</span>Наша компания является одним из лидеров на рынке строительных материалов. Начиная с 2005 года, мы развиваемся в двух направлениях: оптовой и розничной торговле стройматериалами.
                 </p>
@@ -319,9 +305,7 @@
                     <a href="http://www.instagramm.com"><i class="icon-instagram">
                             <img src="images/instagram.png" alt="instagram">
                         </i></a>
-
                 </div>
-
             </div>
         </div>
         <div class="footer-bottom">
@@ -355,8 +339,22 @@
             <button id="order" type="button">Заказать</button>
         </div>
     </div>
+    <div onclick="show2('none')" id="gray2"></div>
+    <div id="feedback">
+        <!-- Картинка крестика -->
+        <img class="close-feed" src="images/close.png" alt="" onclick="show2('none')">
+        <div class="form-feed">
+            <h2>Ваша заявка</h2>
+            <form action="#" name="f1">
+                <input type="text" placeholder="Имя" name="name" class="input">
+                <input type="tel" placeholder="+375(29)" name="tel" class="input">
+                <input type="email" placeholder="Электронная почта" name="email" class="input">
+                <textarea name="message" placeholder="Текст сообщения..."></textarea>
+                <input type="submit" value="Отправить заявку" name="sab" class="input regButton">
+            </form>
+        </div>
+    </div>
     <script src="js/myproject.js"></script>
-    <!-- BEGIN JIVOSITE CODE {literal} -->
     <script type='text/javascript'>
         (function() {
             var widget_id = 'eXkx0VdaNU';
