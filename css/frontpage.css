@@ -20,6 +20,7 @@
     max-width: 317px;
     max-height: 480px;
     overflow: hidden;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.473);
 }
 
 .main__block {
@@ -152,6 +153,10 @@
     position: relative;
     cursor: pointer;
     overflow: hidden;
+}
+
+.news-hot img {
+    border-radius: 4px;
 }
 
 .news-hot-title {

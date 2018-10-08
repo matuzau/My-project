@@ -88,6 +88,10 @@
      .contact-info {
          display: flex;
          flex-direction: column;
+         background: none;
+     }
+     .contact-info h2 {
+         Color: #333;
      }
      .contact-left,
      .contact-right {
