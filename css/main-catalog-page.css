@@ -1,5 +1,4 @@
 .main {
-    
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -10,6 +9,7 @@
     padding-top: 2vmax;
     padding-bottom: 6.66vmax;
     font-family: 'Roboto Condensed', sans-serif;
+    overflow: hidden;
 }
 
 .main__left_bar {
@@ -22,7 +22,7 @@
 
 .list-product {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     /*background-color: #dddddd;*/
     flex-flow: wrap;

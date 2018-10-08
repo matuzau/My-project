@@ -19,6 +19,8 @@
     .header {
         background: linear-gradient(#ffb507, #efe083);
         color: black;
+        overflow: hidden;
+        box-sizing: border-box;
     }
     
     .grey {
@@ -28,6 +30,8 @@
     
     .header__top {
         width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
     }
     
     .header__main {
@@ -325,6 +329,7 @@
     }
     
     .regButton {
+        width: 40%;
         background: #A52A2A;
         border: 1px solid #A52A2A;
         border-radius: 3px;

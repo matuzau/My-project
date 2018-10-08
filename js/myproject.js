@@ -40,19 +40,19 @@ $(document).ready(function() {
 
 
 var goods = [{
-        name: "Клей Тайфун №18",
+        name: "Тайфун №18",
         cost: 8.00,
         description: "Клей для блоков",
         image: "images/клей18.jpg"
     },
     {
-        name: "Клей Тайфун №50",
+        name: "Тайфун №50",
         cost: 9.50,
-        description: "Клей для приклеивания утеплителя",
+        description: "Клей для утеплителя",
         image: "images/клей50.jpg"
     },
     {
-        name: "Штукатурка Тайфун №22",
+        name: "Тайфун №22",
         cost: 14.70,
         description: "Декоративная штукатурка",
         image: "images/тайфун22.jpg"
@@ -76,7 +76,7 @@ var goods = [{
         image: "images/кнауфгкло.jpg"
     },
     {
-        name: "Клей Тайфун №51",
+        name: "Тайфун №51",
         cost: 9.60,
         description: "Клей для утеплителя",
         image: "images/клей51.jpg"
@@ -88,7 +88,7 @@ var goods = [{
         image: "images/белгипсгклв.png"
     },
     {
-        name: "Стяжка Тайфун №42",
+        name: "Тайфун №42",
         cost: 14.70,
         description: "Стяжка для пола",
         image: "images/тайфун42.jpg"

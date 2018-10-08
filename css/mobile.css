@@ -69,6 +69,9 @@
      .main__separate {
          margin: 0;
      }
+     .main__right_bar {
+         width: 100%;
+     }
      .news-hot {
          margin-bottom: 10px;
      }
@@ -104,6 +107,9 @@
          align-items: center;
          flex-flow: wrap;
      }
+     .footer-right {
+         margin: 0 auto;
+     }
      .block-up {
          display: none;
      }
@@ -117,19 +123,25 @@
      .main {
          margin: 8px;
          flex-direction: column;
-         width: 96%;
+         width: 98%;
          padding: 0;
      }
      .main__left_bar {
-         width: 100%;
+         width: 99%;
      }
      .list-product {
          width: 99%;
          margin-top: 8px;
          flex-flow: wrap;
-         justify-content: space-between;
      }
      .product {
-         width: 170px;
+         width: 166px;
+         height: 264px;
+         margin-right: 0;
+     }
+     .product-img {
+         width: 100%;
+         overflow: hidden;
+         height: inherit;
      }
  }
